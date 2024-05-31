@@ -1,0 +1,45 @@
+<!-- 
+We'll create a coin-flip game (create 1 HTML file for exercises 6f - 6j):
+
+NEW RESULT LOAD WHEN REFRESHING PAGE ONLY!
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CoinFlip</title>
+
+<style>
+    button{
+        background-color: black;
+        font-size: large;
+        border-radius: 24px;
+        border-width: 12px;
+        border-style: solid;
+        color: white;
+        
+    }
+</style>
+
+</head>
+<body>
+
+    <button onclick="alert(result + '(refresh for new draw)')">Draw</button>
+    <script>
+    
+    let number = Math.random()
+    let result = ""
+
+    if(number <= 0.5){
+        result = "Heads"
+        console.log(result);
+    }else{
+        result = "Tails"
+        console.log(result);
+    }
+    
+    
+    </script>
+    
+</body>
+</html>
